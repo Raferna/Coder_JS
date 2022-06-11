@@ -10,26 +10,26 @@ class especialidad {
 
     // //Calcula el total de horas trabajadas en el día
     totalHoras (especialidad){
-        console.log ((this.horas_dia + this.horas_tarde))
+        return (this.horas_dia + this.horas_tarde)
     }
 
     // //Calcula paga del profesional por el día
     paga (especialidad){
-        console.log ((150 * (this.horas_dia + this.horas_tarde)))
+        return (150 * (this.horas_dia + this.horas_tarde))
     }
 
     // //Informa en qué consultorio atiende cada especialista
     consultorio (especialidad){
-        console.log (this.num_cons)
+        return (this.num_cons)
     }
 }
 
-const cardio = new especialidad("6", 3, 7);
-const gineco = new especialidad("5", 3, 8);
-const trauma = new especialidad("4", 4, 2);
-const clinico = new especialidad("3", 4, 6);
-const eco = new especialidad("2", 0, 3);
-const oftalmo = new especialidad("1", 4, 8);
+const cardio = new especialidad("Cardio","6", 3, 7);
+const gineco = new especialidad("Gineco","5", 3, 8);
+const trauma = new especialidad("Traumato","4", 4, 2);
+const clinico = new especialidad("Clínico","3", 4, 6);
+const eco = new especialidad("Ecografía","2", 0, 3);
+const oftalmo = new especialidad("Oftalmo","1", 4, 8);
 
 let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 
@@ -57,70 +57,105 @@ let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio),
 
 
 if (consulta == "total de horas cardio" || consulta == "total cardio"){
-    alert("Total de " + total_cardio + " horas en el día")
+    alert("Total de " + total_cardio + " horas en el día");
+
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 else if (consulta == "paga cardio"){
     alert("Paga de $"+ paga_cardio + " por el día");
+    
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 else if (consulta == "consultorio cardio"){
     alert("Ésta especialidad atiende en el consultorio " + consultorio_cardio);
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 
 
 else if (consulta == "total de horas gineco" || consulta == "total gineco"){
-    alert("Total de " + total_gineco + " horas en el día")
+    alert("Total de " + total_gineco + " horas en el día");
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 else if (consulta == "paga gineco"){
     alert("Paga de $"+ paga_gineco + " por el día");
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 else if (consulta == "consultorio gineco"){
     alert("Ésta especialidad atiende en el consultorio " + consultorio_gineco);
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 
 
 else if (consulta == "total de horas trauma" || consulta == "total trauma"){
-    alert("Total de " + total_trauma + " horas en el día")
+    alert("Total de " + total_trauma + " horas en el día");
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 else if (consulta == "paga trauma"){
     alert("Paga de $"+ paga_trauma + " por el día");
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 else if (consulta == "consultorio trauma"){
     alert("Ésta especialidad atiende en el consultorio " + consultorio_trauma);
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 
 
 else if (consulta == "total de horas clínico" || consulta == "total clínico" || consulta == "total de horas clinico" || consulta == "total clinico"){
-    alert("Total de " + total_clinico + " horas en el día")
+    alert("Total de " + total_clinico + " horas en el día");
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 else if (consulta == "paga clínico" || consulta == "paga clínico"){
     alert("Paga de $"+ paga_eco + " por el día");
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 else if (consulta == "consultorio clínico" || consulta == "consultorio clínico"){
     alert("Ésta especialidad atiende en el consultorio " + consultorio_clinico);
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 
 
 else if (consulta == "total de horas eco" || consulta == "total eco"){
-    alert("Total de " + total_eco + " horas en el día")
+    alert("Total de " + total_eco + " horas en el día");
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 else if (consulta == "paga eco"){
     alert("Paga de $"+ paga_eco + " por el día");
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 else if (consulta == "consultorio eco"){
     alert("Ésta especialidad atiende en el consultorio " + consultorio_eco);
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 
 
 else if (consulta == "total de horas oftalmo" || consulta == "total oftalmo"){
-    alert("Total de " + total_oftalmo + " horas en el día")
+    alert("Total de " + total_oftalmo + " horas en el día");
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 else if (consulta == "paga oftalmo"){
     alert("Paga de $"+ paga_oftalmo + " por el día");
 }
 else if (consulta == "consultorio oftalmo"){
     alert("Ésta especialidad atiende en el consultorio " + consultorio_oftalmo);
+    let consulta = prompt("Ingrese su consulta (total de horas, paga o consultorio), seguido de la especialidad buscada (Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo)");
 }
 
 else {
-    alert("Error. Recargue la página e inicie de nuevo.")
+    alert("Error. Recargue la página e inicie de nuevo.");
 }
+
+
+const especialidades = [
+    {nombre: "Cardio", consultorio: "6",horas_dia: 0, horas_tarde: 7},
+    {nombre: "Gineco", consultorio: "5",horas_dia: 0, horas_tarde: 8},
+    {nombre: "Trauma", consultorio: "4",horas_dia: 4, horas_tarde: 0},
+    {nombre: "Clinico", consultorio: "3",horas_dia: 4, horas_tarde: 6},
+    {nombre: "Eco", consultorio: "2",horas_dia: 0, horas_tarde: 3},
+    {nombre: "Oftalmo", consultorio: "1",horas_dia: 4, horas_tarde: 8}];
+
+const mañanas_libres = especialidades.filter((el) => el.horas_dia === 0)
+const tardes_libres = especialidades.filter((el) => el.horas_tarde === 0)
+
+console.log(mañanas_libres);
+
+console.log(tardes_libres);
