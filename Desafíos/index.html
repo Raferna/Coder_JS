@@ -27,61 +27,60 @@
 
   <div class="container">
     <div class="row">
-      <form class="checklist col-3" id="listaConsultas">
+      <form class="radiolist col-4" id="listaConsultas">
         <label class="labelListaCons" for="listaConsultas">Seleccione datos a consultar</label>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckCardio">
-          <label class="form-check-label" for="flexCheckCardio">
+        <div class="form-radio">
+          <input class="form-radio-input" type="radio" name="flexRadioDefault" id="flexradioCardio">
+          <label class="form-radio-label" for="flexradioCardio">
             Información sobre Cardiología
           </label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckGineco">
-          <label class="form-check-label" for="flexCheckGineco">
+        <div class="form-radio">
+          <input class="form-radio-input" type="radio" name="flexRadioDefault" id="flexradioGineco">
+          <label class="form-radio-label" for="flexradioGineco">
             Información sobre Ginecología</label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckTraumato">
-          <label class="form-check-label" for="flexCheckTraumato">
+        <div class="form-radio">
+          <input class="form-radio-input" type="radio" name="flexRadioDefault" id="flexradioTraumato">
+          <label class="form-radio-label" for="flexradioTraumato">
             Información sobre Traumatología</label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckMedClin">
-          <label class="form-check-label" for="flexCheckMedClin">
-            Información sobre Médico Clínico</label>
+        <div class="form-radio">
+          <input class="form-radio-input" type="radio" name="flexRadioDefault" id="flexradioMedGral">
+          <label class="form-radio-label" for="flexradioMedGral">
+            Información sobre Medicina General</label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckEco">
-          <label class="form-check-label" for="flexCheckEco">
+        <div class="form-radio">
+          <input class="form-radio-input" type="radio" name="flexRadioDefault" id="flexradioEco">
+          <label class="form-radio-label" for="flexradioEco">
             Información sobre Ecografía</label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckOft">
-          <label class="form-check-label" for="flexCheckOft">
+        <div class="form-radio">
+          <input class="form-radio-input" type="radio" name="flexRadioDefault" id="flexradioOft">
+          <label class="form-radio-label" for="flexradioOft">
             Información sobre Oftalmología</label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckManiana">
-          <label class="form-check-label" for="flexCheckManiana">
+        <div class="form-radio">
+          <input class="form-radio-input" type="radio" name="flexRadioDefault" id="flexradioManiana">
+          <label class="form-radio-label" for="flexradioManiana">
             Consultorios libres por la mañana
           </label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckTarde">
-          <label class="form-check-label" for="flexCheckTarde">
+        <div class="form-radio">
+          <input class="form-radio-input" type="radio" name="flexRadioDefault" id="flexradioTarde">
+          <label class="form-radio-label" for="flexradioTarde">
             Consultorios libres por la tarde
           </label>
         </div>
-        <!-- <input type="submit" value="Enviar" class=" btn btn-success"> -->
       </form>
 
-      <div class="col-2">
+      <div class="col-1">
 
       </div>
 
-      <div class="resultadoChecklist col-7 id="resultadoCons">
+      <div class="resultadoradiolist col-7">
         <label class="labelResultCons" for="resultadoConsultas">Resultado de su consulta</label>
-        <p>No se ha seleccionado ninguna opción.
+        <p  id="resultadoCons">No se ha seleccionado ninguna opción.
         </p>
       </div>
     </div>

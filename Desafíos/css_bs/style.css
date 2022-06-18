@@ -16,7 +16,11 @@ h2{
     color: SeaGreen;
 }
 
-.checklist{
+h4{
+    color: SeaGreen;
+}
+
+.radiolist{
     margin-top: 1.5rem;
     padding: .5rem;
     border-style: solid;
@@ -30,7 +34,7 @@ h2{
     text-decoration-line: underline;
 }
 
-.resultadoChecklist{
+.resultadoradiolist{
     margin-top: 1.5rem;
     padding: .5rem;
     border-style: solid;
