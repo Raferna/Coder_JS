@@ -5,26 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <script src="./js/simul.js"></script>
+    <link rel="stylesheet" href="css_bs/bootstrap.min.css">
+    <link rel="stylesheet" href="css_bs/style.css">
+    <script defer src="./js/simul.js"></script>
     <title>OSCoder</title>
 </head>
-<body style="background-color: gray;">
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo_navbar.png" alt="" width="20" height="20" class="d-inline-block align-text-bottom">
+        OSCoder
+      </a>
+    </div>
+  </nav>
+    
+    
+  <h1 class="text-center">Consultorios médicos</h1>
+  <h2 class="text-center">Sistema para personal administrativo</h2>
+
+  <div class="container">
+    <div class="row">
+      <form class="checklist col-3" id="listaConsultas">
+        <label class="labelListaCons" for="listaConsultas">Seleccione datos a consultar</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckCardio">
+          <label class="form-check-label" for="flexCheckCardio">
+            Información sobre Cardiología
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckGineco">
+          <label class="form-check-label" for="flexCheckGineco">
+            Información sobre Ginecología</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckTraumato">
+          <label class="form-check-label" for="flexCheckTraumato">
+            Información sobre Traumatología</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckMedClin">
+          <label class="form-check-label" for="flexCheckMedClin">
+            Información sobre Médico Clínico</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckEco">
+          <label class="form-check-label" for="flexCheckEco">
+            Información sobre Ecografía</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckOft">
+          <label class="form-check-label" for="flexCheckOft">
+            Información sobre Oftalmología</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckManiana">
+          <label class="form-check-label" for="flexCheckManiana">
+            Consultorios libres por la mañana
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckTarde">
+          <label class="form-check-label" for="flexCheckTarde">
+            Consultorios libres por la tarde
+          </label>
+        </div>
+        <!-- <input type="submit" value="Enviar" class=" btn btn-success"> -->
+      </form>
+
+      <div class="col-2">
+
+      </div>
+
+      <div class="resultadoChecklist col-7 id="resultadoCons">
+        <label class="labelResultCons" for="resultadoConsultas">Resultado de su consulta</label>
+        <p>No se ha seleccionado ninguna opción.
+        </p>
+      </div>
+    </div>
 
 
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="assets/logo_navbar.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
-                OSCoder
-              </a>
-            </div>
-          </nav>
-    
-    
-        <h1 class="text-center">Consultorios médicos</h1>
-    
-    
-        <h2 class="text-center">Sistema para personal administrativo</h2>
-    
+  </div>
+
 </body>
 </html>
