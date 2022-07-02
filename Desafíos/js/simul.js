@@ -1,13 +1,7 @@
 let user;
 let userLS = JSON.stringify(localStorage.getItem("user"))
 
-if (userLS) {
-    user = userLS
-}
-
-else {
-    user = prompt("Ingresa tu nombre de usuario")
-}
+user = userLS ? alert("Bienvenido") : prompt("Ingresa tu nombre de usuario")
 
 //Distribución de especialistas en consultorio médico
 const especialidades = [
@@ -46,7 +40,7 @@ imputCardio.addEventListener(`change`,() => {
     <p>Consultorio: ${especialidades[0].Consultorio}
     <p>Total de horas diarias: ${(especialidades[0].Horas_dia) + (especialidades[0].Horas_tarde)}
     <p>Paga diaria: $ ${150 * ((especialidades[0].Horas_dia) + (especialidades[0].Horas_tarde))}`
-    planilla.innerHTML = `      <table class="table table-sm table-success table-bordered caption-top">
+    planilla.innerHTML = `<table class="table table-sm table-success table-bordered caption-top">
     <caption>Turnos disponibles</caption>
     <thead>
       <tr>
@@ -108,7 +102,7 @@ imputGineco.addEventListener(`change`,() => {
     <p>Consultorio: ${especialidades[1].Consultorio}</p>
     <p>Total de horas diarias: ${(especialidades[1].Horas_dia) + (especialidades[1].Horas_tarde)}
     <p>Paga diaria: $ ${150 * ((especialidades[1].Horas_dia) + (especialidades[1].Horas_tarde))}`
-    planilla.innerHTML = `      <table class="table table-sm table-success table-bordered caption-top">
+    planilla.innerHTML = `<table class="table table-sm table-success table-bordered caption-top">
     <caption>Turnos disponibles</caption>
     <thead>
       <tr>
@@ -170,7 +164,7 @@ imputTraumato.addEventListener(`change`,() => {
     <p>Consultorio: ${especialidades[2].Consultorio}</p>
     <p>Total de horas diarias: ${(especialidades[2].Horas_dia) + (especialidades[2].Horas_tarde)}
     <p>Paga diaria: $ ${150 * ((especialidades[2].Horas_dia) + (especialidades[2].Horas_tarde))}`
-    planilla.innerHTML = `      <table class="table table-sm table-success table-bordered caption-top">
+    planilla.innerHTML = `<table class="table table-sm table-success table-bordered caption-top">
     <caption>Turnos disponibles</caption>
     <thead>
       <tr>
@@ -232,7 +226,7 @@ imputMedGral.addEventListener(`change`,() => {
     <p>Consultorio: ${especialidades[3].Consultorio}</p>
     <p>Total de horas diarias: ${(especialidades[3].Horas_dia) + (especialidades[3].Horas_tarde)}
     <p>Paga diaria: $ ${150 * ((especialidades[3].Horas_dia) + (especialidades[3].Horas_tarde))}`
-    planilla.innerHTML = `      <table class="table table-sm table-success table-bordered caption-top">
+    planilla.innerHTML = `<table class="table table-sm table-success table-bordered caption-top">
     <caption>Turnos disponibles</caption>
     <thead>
       <tr>
@@ -294,7 +288,7 @@ imputEco.addEventListener(`change`,() => {
     <p>Consultorio: ${especialidades[4].Consultorio}</p>
     <p>Total de horas diarias: ${(especialidades[4].Horas_dia) + (especialidades[4].Horas_tarde)}
     <p>Paga diaria: $ ${150 * ((especialidades[4].Horas_dia) + (especialidades[4].Horas_tarde))}`
-    planilla.innerHTML = `      <table class="table table-sm table-success table-bordered caption-top">
+    planilla.innerHTML = `<table class="table table-sm table-success table-bordered caption-top">
     <caption>Turnos disponibles</caption>
     <thead>
       <tr>
@@ -356,7 +350,7 @@ imputOft.addEventListener(`change`,() => {
     <p>Consultorio: ${especialidades[5].Consultorio}</p>
     <p>Total de horas diarias: ${(especialidades[5].Horas_dia) + (especialidades[5].Horas_tarde)}
     <p>Paga diaria: $ ${150 * ((especialidades[5].Horas_dia) + (especialidades[5].Horas_tarde))}`
-    planilla.innerHTML = `      <table class="table table-sm table-success table-bordered caption-top">
+    planilla.innerHTML = `<table class="table table-sm table-success table-bordered caption-top">
     <caption>Turnos disponibles</caption>
     <thead>
       <tr>
@@ -424,3 +418,28 @@ imputTarde.addEventListener(`change`,() => {
     <p>${consLibresTar}</p>`
     planilla.innerHTML = ``
 })
+
+
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Cardiología', 'Ginecología', 'Traumatología', 'Medicina Gral.', 'Ecografías', 'Oftalmología'],
+        datasets: [{
+            label: 'Cantidad de horas diarias por especialidad',
+            data: [5, 6, 4, 10, 3, 7],
+            backgroundColor: [
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
