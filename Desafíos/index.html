@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css_bs/bootstrap.min.css">
     <link rel="stylesheet" href="css_bs/style.css">
     <script defer src="./js/simul.js"></script>
-    <script defer src="./js/datos.json"></script>
+    <script defer src="./js/eventos.js"></script>
+    <script defer src="./js/datos_opers.json"></script>
+    <script defer src="./js/datos_refs.json"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
     <title>OSCoder</title>
 </head>
@@ -91,7 +93,7 @@
 
     <div class="row" id="planillaTurnos">
       <table class="table table-sm table-success table-bordered caption-top">
-        <caption>Turnos disponibles</caption>
+        <caption>Turnos reservados</caption>
         <thead>
           <tr>
             <th scope="col"></th>
@@ -113,80 +115,80 @@
         <tbody>
           <tr>
             <th scope="row">:00</th>
-            <td id="08:00"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="08:00"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="09:00"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="09:00"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="10:00"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="10:00"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="11:00"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="11:00"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="12:00"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="12:00"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="13:00"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="13:00"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="14:00"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="14:00"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="15:00"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="15:00"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="16:00"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="16:00"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="17:00"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="17:00"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="18:00"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="18:00"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="19:00"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="19:00"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
           </tr>
 
           <tr>
             <th scope="row">:30</th>
-            <td id="08:30"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="08:30"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="09:30"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="09:30"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="10:30"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="10:30"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="11:30"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="11:30"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="12:30"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="12:30"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="13:30"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="13:30"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="14:30"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="14:30"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="15:30"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="15:30"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="16:30"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="16:30"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="17:30"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="17:30"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="18:30"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="18:30"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
-            <td id="19:30"><input class="form-check-input check-change" type="checkbox" value="">
+            <td id="19:30"><input class="form-check-input check-change" type="checkbox" value="" disabled>
               <label class="form-check-label" for="flexCheckDefault">
               </label></td>
           </tr>
@@ -197,13 +199,22 @@
 
     <div class="row-cols-2"></div>
 
-    <div class="row" id="tablaCons">
-      <canvas id="myChart" width="350" height="100"></canvas>
+    <div class="row">
+      <canvas id="cargaHoraria" width="350" height="100"></canvas>
     </div>
 
-    <div class="row-cols-2"></div>
+    <div class="row">
+      <h4>Empleados</h4>
 
-    <div class="row" id="usuarios">
+    <div class="col-5 puestos" id="operadores">
+    </div>
+
+    <div class="col-2">
+    </div>
+
+    <div class="col-5 puestos" id="referentes">
+    </div>
+
     </div>
 
     
